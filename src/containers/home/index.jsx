@@ -9,7 +9,7 @@ const Home = () => {
     const handleNavigateToContactPage = () => {
         navigate('/contact')
     }
-    const fileUrl = "https://drive.google.com/file/d/14g8O0wIGEmYi71CvOsW5zcADQ3ofGnSo/view"
+    const fileUrl = "https://drive.google.com/file/d/1FrEB4DH9R9wX-8RMfd65wpzztfzlesaG/view"
     return (
         <section id="home" className="home">
             <div className="home-text-wrapper">
