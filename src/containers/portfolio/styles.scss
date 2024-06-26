@@ -1,0 +1,155 @@
+.projects{
+    &-content{
+        padding: 20px;
+        width: 100%;
+
+        &-filter{
+            display: inline-block;
+            margin: 0 auto;
+            border-radius: 25px;
+            border: 1px dashed var(--yellow-theme-main-color);
+            li{
+                font-size: 14px;
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                color: var(--yellow-theme-main-color);
+                text-transform: uppercase;
+                padding: 12px 20px;
+                overflow: hidden;
+                transition: all 0.5s ease;
+                &.active{
+                    border-radius: 25px;
+                    color: white;
+                    background-color: var(--yellow-theme-main-color);
+                    font-weight: 600;
+                }
+            }
+        }
+        &-cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem;
+            grid-auto-rows: auto;
+            margin-top: 10px;
+            // justify-content: center;
+            // align-items: center;
+            &-item{
+                height: 366px;
+                cursor: pointer;
+                position: relative;
+                &:hover .overlay{
+                    opacity: 1;
+                }
+                &-imagewrapper{
+                    height: 100%;
+                    a{
+                        height: 100%;
+                        img{
+                            height: inherit;
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: inherit;
+                    opacity: 0;
+                    transition: 0.5s ease;
+                    background-color: var(--yellow-theme-main-color);
+                    div{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        p{
+                            color: black;
+                            margin-bottom: 20px;
+                            font-size: 4rem;
+                            width: 100%;
+                            position: relative;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            animation: typingEffect 1s steps(30,end);
+                        }
+                        a{
+                            cursor: pointer;
+                            margin-top: 16px;
+                            margin-left: 10px;
+                            padding: 10px;
+                            font-size: 2rem;
+                            background: transparent;
+                            color: black;
+                            border: 1.5px solid black;
+                            border-radius: 4px;
+                            font-weight: 500;
+                        }
+                        a:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 683px){
+    .projects-content-filter{
+        li{
+            font-size: 11px;
+        }
+    }
+    .projects-content-cards{
+        grid-template-columns: repeat(1,1fr);
+        &-item{
+            .overlay{
+                div{
+                    p{
+                        font-size: 2rem;
+                    }
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 684px) and (max-width: 1140px){
+    .projects-content-filter{
+        li{
+            font-size: 12px;
+        }
+    }
+    .projects-content-cards{
+        grid-template-columns: repeat(2,1fr);
+        &-item{
+            .overlay{
+                div{
+                    p{
+                        font-size: 3rem;
+                    }
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes typingEffect {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
