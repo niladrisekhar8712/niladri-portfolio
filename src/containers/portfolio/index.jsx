@@ -146,8 +146,8 @@ const projectdata = [
         id: 2,
         name: "Portfolio Website",
         image: Portfolio1,
-        repository: "https://github.com/Niladri-Sekhar-Mondal/niladri-sekhar-mondal-portfolio",
-        link: "#",
+        repository: "https://github.com/niladrisekhar8712/niladri-portfolio",
+        link: "https://niladri-portfolio-psi.vercel.app/",
         Description: "The Portfolio is a client-side application built using React.js framework. It displays my personal information, skills, and projects. This documentation provides an overview of the client-side code structure and functionality.",
         category: "Web Development"
     },
