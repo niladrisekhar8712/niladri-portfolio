@@ -1,6 +1,6 @@
 import React from "react";
 import { PageHeader } from "../../components/page-header";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { MdOutlineCastForEducation } from "react-icons/md";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,7 +15,7 @@ const Resume = () => {
     <section id="resume" className="resume">
       <PageHeader
         headerText="My Education"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<MdOutlineCastForEducation size={40} />}
       />
       <div className="timeline">
         {/* <div className="timeline__experience">
