@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
 import "./styles.scss"
 const Home = () => {
     const navigate = useNavigate();
@@ -37,6 +38,9 @@ const Home = () => {
                             </a>
                             <a href="https://github.com/niladrisekhar8712">
                                 <BsGithub size={43} fill="yellow" />
+                            </a>
+                            <a href="https://leetcode.com/u/niladrismondal8712/">
+                                <SiLeetcode size={43} fill="yellow" />
                             </a>
                         </div>
                     </div>
